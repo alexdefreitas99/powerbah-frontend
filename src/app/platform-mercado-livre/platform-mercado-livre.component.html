@@ -1,0 +1,28 @@
+<p>platform-mercado-livre works!</p>
+<div>
+    <label for="name">Nome do usuario: </label>
+    <input id="name" [(ngModel)]="dadosUsuario.name" placeholder="name">
+    <label for="name">ID app mercado livre: </label>
+    <input id="name" [(ngModel)]="dadosUsuario.appId" placeholder="appId">
+    <label for="name">Chave secreta do app: </label>
+    <input id="name" [(ngModel)]="dadosUsuario.appSecretKey" placeholder="appSecretKey">
+    <button (click)="redirecionaComDadosDoUsuario(dadosUsuario)">Redireciona para ML e Salva dados no DB</button>
+</div>
+
+<!-- <div>
+    <div class="row">
+      <div class="col-sm-4" *ngFor="let item of listItemDetalheResponse">
+        <div class="card" (click)="openModal(item)">
+          <img [src]="item?.dadosImagens[0]?.url" alt="Image not found"
+            onerror="this.onerror=null;this.src='../../../assets/images/semImagem.jpg'" />
+          <div class="card-body">
+            <h5 class="card-title"> {{ item.nomenclatura }} </h5>
+            <p> Estoque: {{ item.estoque }} </p>
+            <p> Marca pai: {{ item.descricaoMarcaPai }} </p>
+            <p> Preço de venda: R$ {{ item.preco?.precoVenda }}</p>
+            <p> Preço fidelidade: R$ {{ item.preco?.precoFidelidade }} </p>
+          </div>
+        </div>
+      </div>
+      <button *ngIf="isShow" (click)="goToTop()" class="goToTop btn btn-primary">Ir para o inicio da pagina</button>
+    </div>' -->
